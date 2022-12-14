@@ -26,6 +26,3 @@ def ipstringtobinstring (ipstring):
         )
     return binstring
 
-# Трэкер данных
-def datatracker ():
-    
