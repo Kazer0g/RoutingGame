@@ -3,7 +3,7 @@ def octanlen (octan):
     return ('0'*(8-len(octan))+octan)
 
 # Конвертирует бинарную запись в IP-адрес строку
-def binstringtoIPstring (binstring):
+def binstringtoipstring (binstring):
     l = binstring.split('.')
     l = [str(int('0b'+i, 2)) for i in l]
     IPstring = (
@@ -15,8 +15,8 @@ def binstringtoIPstring (binstring):
     return IPstring
 
 # Конвертирует IP-адрес строку в бинарную запись 
-def IPstringtobinstring (IPstring):
-    l = IPstring.split('.')
+def ipstringtobinstring (ipstring):
+    l = ipstring.split('.')
     l = [bin(int(i))[2:] for i in l]
     binstring = (
         octanlen(l[0])+'.'+
@@ -26,3 +26,6 @@ def IPstringtobinstring (IPstring):
         )
     return binstring
 
+# Трэкер данных
+def datatracker ():
+    
