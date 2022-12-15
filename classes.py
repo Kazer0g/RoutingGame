@@ -1,5 +1,5 @@
 class Route:
-    def __init__(self, subnet, mask, gateway, interface, obj):
+    def __init__(self, subnet, mask, gateway, interface):
         self.subnet = subnet # Подсеть
         self.mask = mask # Маска
         self.gateway = gateway # Шлюз
