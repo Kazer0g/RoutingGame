@@ -26,5 +26,7 @@ def ipstringtobinstring (ipstring):
         )
     return binstring
 
-def checker ():
-    print ('Я пока без понятия что делать че делать')
+def checker (current, recipient):
+    while recipient.subnet != current.subnet:
+        
+    
