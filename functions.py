@@ -26,7 +26,7 @@ def ipstringtobinstring (ipstring):
         )
     return binstring
 
-def checker (current, recipient):
-    while recipient.subnet != current.subnet:
-        
-    
+def etherinit (routers, machines):
+    for router in routers:
+        for route in router.routingTable:
+            route.obj = 

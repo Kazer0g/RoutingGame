@@ -14,7 +14,7 @@ class Machine:
     def __init__(self, routingTable):
          self.routingTable = routingTable # Таблица маршрутизации
 
-# class Subnet:
-    # def __init__(self, subnet, mask):
-    #     self.subnet = subnet
-    #     self.mask = mask
+class Subnet:
+    def __init__(self, subnet, mask):
+        self.subnet = subnet
+        self.mask = mask
