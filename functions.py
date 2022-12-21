@@ -26,7 +26,16 @@ def ipstringtobinstring (ipstring):
         )
     return binstring
 
-def etherinit (routers, machines):
-    for router in routers:
-        for route in router.routingTable:
-            route.obj = 
+# Устанавлиевает "Ethernet" соединение между объектами
+def etherinit (routers, subnets):
+    for router in routers: # Роутер из списка
+        for route in router.routingTable: # Маршрут из таблицы роутера
+            for subnet in subnets: # Перебор подсетей
+                print (subnet.routingTable[0].subnet)
+                if subnet.routingTable[0].subnet == route.subnet: 
+                    route.obj = subnet # Спопоставление IP-подсетей
+                    subnet.routingTable[0] = router
+            
+
+# def way (current, recipient):
+    

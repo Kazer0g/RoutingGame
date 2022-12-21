@@ -57,8 +57,40 @@ routers = [
     ])
 ]
 
-machines = [
-    Machine([
+# machines = [
+    # Machine([
+    #     Route(
+    #         subnet='192.168.10.0',
+    #         mask='255.255.255.0',
+    #         gateway='def',
+    #         interface='def',
+    #         obj=None
+    #     )
+    # ]),
+
+    # Machine([
+    #     Route(
+    #         subnet='192.168.20.0',
+    #         mask='255.255.255.0',
+    #         gateway='def',
+    #         interface='def',
+    #         obj=None
+    #     )
+    # ]),
+
+    # Machine([
+    #     Route(
+    #         subnet='192.168.32.0',
+    #         mask='255.255.240.0',
+    #         gateway='def',
+    #         interface='def',
+    #         obj=None
+    #     )
+    # ])
+# ]
+
+subnets = [
+    Subnet([
         Route(
             subnet='192.168.10.0',
             mask='255.255.255.0',
@@ -68,7 +100,7 @@ machines = [
         )
     ]),
 
-    Machine([
+    Subnet([
         Route(
             subnet='192.168.20.0',
             mask='255.255.255.0',
@@ -78,7 +110,7 @@ machines = [
         )
     ]),
 
-    Machine([
+    Subnet([
         Route(
             subnet='192.168.32.0',
             mask='255.255.240.0',
@@ -87,21 +119,4 @@ machines = [
             obj=None
         )
     ])
-]
-
-subnets = [
-    Subnet(
-        subnet='192.168.10.0',
-        mask='255.255.255.0'
-    ),
-
-    Subnet(
-        subnet='192.168.20.0',
-        mask='255.255.255.0'
-    ),
-
-    Subnet(
-        subnet='192.168.32.0',
-        mask='255.255.240.0'
-    )
 ]
