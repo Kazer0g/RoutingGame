@@ -1,5 +1,6 @@
 from classes import *
 
+
 subnetA = Subnet(
     subnet='192.168.10.0'
 )
@@ -36,3 +37,5 @@ routerA = Router(
         obj=None
     )
 )
+
+subnets = [subnetA]

@@ -2,4 +2,5 @@ from classes import *
 from functions import *
 from test import *
 
-print (routerA.nextstep(subnetA))
+routerA.etherinit(subnets)
+print (routerA.nextstep(subnetA).subnet)

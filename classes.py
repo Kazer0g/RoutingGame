@@ -11,7 +11,11 @@ class Router:
         self.routingTable = routingTable # Таблица маршрутизации
         self.defaultRoute = defaultRoute
 
-    # def etherinit (self, )
+    def etherinit (self, subnets):
+        for route in self.routingTable:
+            for subnet in subnets:
+                if route.subnet == subnet.subnet:
+                    route.obj = subnet
 
     def nextstep (self, recipient):
         for route in self.routingTable:
