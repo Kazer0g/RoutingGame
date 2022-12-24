@@ -19,7 +19,6 @@ class Machine:
         print('Hi')
 
     def send_package(self, package):
-        
         self.subnet.take_package(package)
 
 
